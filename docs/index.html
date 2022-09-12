@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Purchase Request Platform</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<section class="hero">
+		<div class="hero-body">
+			<h1 class="title has-text-white">
+				Purchase Request Platform
+			</h1>
+			<p class="subtitle">
+				a unified workflow for a library to receive, consider and process book
+				purchase requests</p>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+
+			<div class="columns">
+
+				<div class="column is-three-quarters">
+					<div class="content">
+						<h2>The Purchase Request Platform is designed to:</h2>
+						<ul>
+							<li>Get more patron input on book purchase requests, from multiple sources.</li>
+							<li>Assist selectors in evaluating the requests with supporting information.</li>
+							<li>Assist technical services staff in acting on them.</li>
+						</ul>
+		
+
+						<p>The project code is open source and <a href="https://github.com/lehigh-university-libraries/purchase-request-workflow-proxy-server">available on GitHub</a>.</p>
+						<p>
+							<a href="#input">Patron Input</a> | 
+							<a href="#decision">Easy Librarian Decision Making</a> |
+							<a href="#supporting">Supporting Information</a> |
+							<a href="#technical">Technical Information</a> |
+							<a href="#contact">Contact</a>
+						</p>
+		
+					</div>
+				</div>
+
+				<div class="column is-one-quarter">
+
+					<div class="card">
+						<div class="card-image">
+							<figure class="image">
+								<img id="lehigh-logo" src="images/lehigh_official_stacked_logo_4C.png"/>
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="content">
+								<p>The Purchase Request Platform is a project of <a href="https://library.lehigh.edu/">Lehigh University Libraries</a>.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="content">
+				<a id="input"></a>
+				<hr/>
+				<h2>Patron Input from Multiple Sources</h2>
+			</div>
+
+			<div class="columns full-height">
+
+				<div class="column is-one-third">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-3by2">
+								<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-4">ILL Return Slips</p>
+									<p class="subtitle is-6">Explicit Patron Input</p>
+								</div>
+							</div>
+							<div class="content">
+								<p>Patrons circle ‘yes’ to a question on ILL or consortium borrowing return slips that asks “Should our
+									library purchase a copy of this item?"</p>
+							</div>
+						</div>
+						<div class="card-footer">
+							<a class="card-footer-item"
+								href="https://github.com/lehigh-university-libraries/purchase-request-returns-client#readme">Returns
+								Client</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="column is-one-third">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-3by2">
+								<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-4">Duplicate ILL Requests</p>
+									<p class="subtitle is-6">Implicit Patron Input</p>
+								</div>
+							</div>
+							<div class="content">
+								<p>Detects multiple, recent interlibrary loan or consortium borrowing requests for the same items,
+									implying that staff should consider a local purchase.</p>
+							</div>
+						</div>
+						<div class="card-footer">
+							<span class="card-footer-item">Duplicate Loans Client (In Progress)</span>
+							<!-- <a class="card-footer-item"
+								href="https://github.com/lehigh-university-libraries/purchase-request-duplicate-loans-client#readme">Duplicate
+								Loans Client</a> -->
+						</div>
+					</div>
+				</div>
+
+				<div class="column is-one-third">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-3by2">
+								<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-4">Lost Items</p>
+									<p class="subtitle is-6">Implicit Patron Input</p>
+								</div>
+							</div>
+							<div class="content">
+								<p>Detects items marked lost in the ILS/LSP so that they can be considered for replacement, noting if a
+									patron requested the lost item.</p>
+							</div>
+						</div>
+						<div class="card-footer">
+							<a class="card-footer-item"
+								href="https://github.com/lehigh-university-libraries/purchase-request-lost-items-client#readme">Lost
+								Items Client</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="columns full-height">
+
+				<div class="column is-one-third">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-3by2">
+								<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-4">Browser Plug-in</p>
+									<p class="subtitle is-6">Librarian-initiated Requests</p>
+								</div>
+							</div>
+							<div class="content">
+								<p>Aimed at librarian selectors, a browser plug-in for easily submitting library purchase requests from
+									book review sites or anywhere else on the web.</p>
+							</div>
+						</div>
+						<div class="card-footer">
+							<a class="card-footer-item"
+								href="https://github.com/lehigh-university-libraries/purchase-request-lost-items-client#readme">Lost
+								Items Client</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="column is-one-third">
+					<div class="card">
+						<div class="card-image">
+							<figure class="image is-3by2">
+								<img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+							</figure>
+						</div>
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-4">Website Form</p>
+									<p class="subtitle is-6">Explicit Patron Input</p>
+								</div>
+							</div>
+							<div class="content">
+								<p>A traditional website form for patrons to submit purchase requests. Typically a form page that is
+									part of the existing library website.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="content">
+				<a id="decision"></a>
+				<hr/>
+				<h2>Easy Librarian Decision-Making</h2>
+				<p>All purchase requests – from any source – are directed into a single, centralized web-based tool for
+					librarian
+					selectors to review and approve or deny the request. Each request is routed to a specific librarian based on
+					the
+					book’s subject classification.</p>
+				<img class="screenshot" src="images/flowchart.png"
+					alt="Flowchart.  Patron input from multiple sources flows into the Workflow Proxy Server, where it is combined with supporting info from library metadata and external sources.  Then a librarian makes the purchase request decision, routing the request to Purchase Approved or Purchase Declined status.  The librarian can also move the request to Pending Review status for later consideration.  After technical services staff buys the print or ebook, the status becomes Purchase Completed.">
+
+				<h3>Kanban board</h3>
+				<p>Jira’s kanban boards make it easy for librarians to visualize and make decisions about the requests in their
+					queue.</p>
+				<img class="screenshot" src="images/kanban.png" alt="A kanban board showing New, Pending Review, Approve, Declined, and On Shelf statuses.">
+
+				<a id="supporting"></a>
+				<hr/>
+				<h2>Supporting Information</h2>
+
+				Each incoming request is automatically enriched with information to save staff time and support decision-making,
+				including:
+			</div>
+
+			<div class="columns full-height">
+
+				<div class="column is-one-fourth">
+					<div class="card">
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-4">Any Current Local Holdings</p>
+								</div>
+							</div>
+							<div class="content">
+								<p>in any format.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="column is-one-fourth">
+					<div class="card">
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-4">Consortial Holdings</p>
+								</div>
+							</div>
+							<div class="content">
+								<p>from one or more consortia.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="column is-one-fourth">
+					<div class="card">
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-4">List Price Information</p>
+								</div>
+							</div>
+							<div class="content">
+								<p>including hardcover, paperback and digital formats.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="column is-one-fourth">
+					<div class="card">
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-4">Requester Details</p>
+								</div>
+							</div>
+							<div class="content">
+								<p>such as their role (faculty, undergraduate, etc.) and department.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="content">
+				<p>Current data sources and other integrations include:</p>
+				<ul class="columns-3">
+					<li>Jira</li>
+					<li>Restyaboard</li>
+					<li>FOLIO</li>
+					<li>OCLC WorldCat</li>
+					<li>ILLiad</li>
+					<li>ReShare</li>
+					<li>ISBNdb</li>
+					<li>LDAP</li>
+					<li>Google Sheets</li>
+					<li>Email reporting</li>
+				</ul>
+
+				<a id="technical"></a>
+				<hr/>
+				<h2>Technical Information</h2>
+				<p>Source code, configuration and technical documentation available on GitHub.</p>
+				<ul>
+					<li><a href="https://github.com/lehigh-university-libraries/purchase-request-workflow-proxy-server">Workflow Proxy Server</a></li>
+					<li><a href="https://github.com/lehigh-university-libraries/purchase-request-workflow-proxy-server#clients">Clients</a></li>
+				</ul>
+
+				<a id="contact"></a>
+				<hr/>
+				<h2>Contact</h2>
+				<p>Contact <a href="mailto:msl321@lehigh.edu;dlh4@lehigh.edu?subject=Purchase Requests Platform">Maccabee Levine and Dan Huang</a> at Lehigh University for additional information.</p>
+
+			</div>
+
+
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<p>The Purchase Request Platform is a project of <a href="https://library.lehigh.edu/">Lehigh University Libraries</a>.</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>
